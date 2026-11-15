@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <rect width="180" height="180" rx="40" fill="#fb7299"/>
+  <path d="M0 132h180v8a40 40 0 0 1-40 40H40a40 40 0 0 1-40-40z" fill="#eb5c85"/>
+  <text x="86" y="118" font-family="Segoe UI Semibold, Segoe UI, Arial" font-size="96"
+        font-weight="700" fill="#fff" text-anchor="middle">B</text>
+  <path d="M118 118v28l24-14z" fill="#fff"/>
+</svg>

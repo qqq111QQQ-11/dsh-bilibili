@@ -1,0 +1,26 @@
+{
+  "name": "dsh-bilibili",
+  "version": "1.0.0",
+  "description": "在 DeepSeek Harness 里刷哔哩哔哩：扫码登录、推荐流、搜索、视频详情，并支持点赞、评论、转发。",
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "bilibili", "b站"],
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "assets", "cordis.patch.yml", "README.md", "LICENSE"],
+  "engines": { "node": ">=18.0.0" },
+  "peerDependencies": { "@deepseek-ai/schemastery": "*" },
+  "peerDependenciesMeta": { "@deepseek-ai/schemastery": { "optional": true } },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-settings"]
+    }
+  }
+}
